@@ -1,37 +1,42 @@
-## Welcome to GitHub Pages
+# Project Proposal
 
-You can use the [editor on GitHub](https://github.com/zaflower/CHIP490-Project/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+## Problem and Solution
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+Maternal morbidity is associated with worse health outcomes of mothers and infants and high medical cost and length of hospitalization stay. For some factors, it is known how they are associated with maternal morbidity. For example, factors at the individual level (i.e., maternal age, pre-existing medical condition, delivery type) can greatly increase the risk of maternal morbidity. On the other hand, for other factors, their relationship with maternal morbidity is more obscure. For example, despite the fact that the US spends more on maternity care, there has been since 2000, a rise in maternal mortality than in any other developed country. This issue is further exacerbated by racial disparities with Black or African and Indigenous American women having a 3 or 4 times more likelihood of experiencing pregnancy-related death when compared to their white counterparts.
 
-### Markdown
+One pertinent driver of this issue is the existence of fragmented and missing data and the lack of interoperability between EHR systems. This situation can be alleviated using FHIR-based computational phenotyping based on structured and unstructured data from multiple healthcare systems.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+## Audience
 
-```markdown
-Syntax highlighted code block
+Healthcare systems looking to improve their computerized clinical decision support systems (CDSS) with regards to maternal health. The FHIR-based computational phenotyping can be incorporated into their CDSS and alert providers of high-risk patients prior to the adverse event and mitigate maternal morbidity.
 
-# Header 1
-## Header 2
-### Header 3
+## Desired Features
+1. Patient: demographics 
+2. Labels: disease or condition
+3. Labs: patient IDs and their lab results
+4. Medications: patient IDs and their medications
+5. Vitals: patient IDs and their vital
+6. Clinical Notes: unstructured text for the patients
 
-- Bulleted
-- List
+## Relevant resources in FHIR
 
-1. Numbered
-2. List
+* Patient 
+* Observation
+* Encounter
+* MedicationStatement 
+* DiagnosticReport
+* AdverseEvent
+* Procedure
+* Condition
 
-**Bold** and _Italic_ and `Code` text
+## Language
 
-[Link](url) and ![Image](src)
-```
+* JSON
+* Python
+* Regex
 
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
 
-### Jekyll Themes
+## Resources
+1. https://effectivehealthcare.ahrq.gov/products/maternal-morbidity-mortality/protocol
+2. https://tracs.unc.edu/docs/clark-2-documentation.html#fhir
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/zaflower/CHIP490-Project/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
